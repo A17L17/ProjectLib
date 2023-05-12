@@ -7,7 +7,7 @@
                 <div class="">
                     <div class="page-title">
                         <div class="title_left">
-                            <h3>Home Page</h3>
+                            <h3>Content</h3>
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -15,7 +15,7 @@
                         <div class="col-md-12 col-sm-12 ">
                             <div class="x_panel">
                                 <div class="x_content">
-                                    <p>Home Page information</p>
+                                    <p>akan ada selalu ekjutan di my lib</p>
                                 </div>
                             </div>
                         </div>

@@ -32,6 +32,7 @@
         <div class="animate form login_form">
           <section class="login_content">
             <form action="<?=base_url('auth')?>" method="post" enctype="multipart/from-data">
+            <?=csrf_field()?>
               <h1>Login Form</h1>
 
               <?php if (!empty(session()->getFlashdata('error'))) : ?>
