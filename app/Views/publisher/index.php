@@ -8,8 +8,8 @@
                     <div class="page-title">
                         <div class="title_left">
                             <h3>
-                                Staff Page
-                            <a href="<?=base_url('staff-add')?>" class="btn btn-round btn-success btn-sm"><i class="fa fa-plus"></i></a>
+                                Publisher Page
+                            <a href="<?=base_url('publisher-add')?>" class="btn btn-round btn-success btn-sm"><i class="fa fa-plus"></i></a>
                             </h3>
                         </div>
                     </div>
@@ -23,22 +23,23 @@
                       <thead>
                         <tr>
                           <th><center>Username</center></th>
-                          <th><center>Email User</center></th>
-                          <th width="100px"><center>Tool</center></th>
+                          <th><center>Address</center></th>
+                          <th width="100px"><center>Contact</center></th>
                         </tr>
                       </thead>
                       <tbody>
 
-                            <?php foreach($staff as $item) : ?>
+                            <?php foreach($publisher as $item) : ?>
 
                         <tr>
                           <td><?= $item['name']?></td>
-                          <td><?= $item['email']?></td>
+                          <td><?= $item['address']?></td>
+                          <td><?= $item['contact']?></td>
                           <td>
 
                             <center>
-                                <a href="<?=base_url('staff-edit/').$item['id']?>" class="btn btn-round btn-info btn-sm"><i class="fa fa-pencil"></i></a>
-                                <a href="<?=base_url('staff-del/').$item['id']?>" class="btn btn-round btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                <a href="<?=base_url('publisher-edit/').$item['id']?>" class="btn btn-round btn-info btn-sm"><i class="fa fa-pencil"></i></a>
+                                <a href="<?=base_url('publisher-del/').$item['id']?>" class="btn btn-round btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                             </center>
 
                           </td>

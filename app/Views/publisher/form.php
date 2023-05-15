@@ -1,6 +1,6 @@
 <?php
     $is_edit    = isset($item);
-    $target_url = ($is_edit) ? "/staff-editpro" : "/staff-addpro";
+    $target_url = ($is_edit) ? "/publisher-editpro" : "/publisher-addpro";
 ?>
 
 <?= $this->extend('main') ?>
@@ -12,7 +12,7 @@
 		<div class="">
 			<div class="page-title">
 				<div class="title_left">
-					<h3><?= ($is_edit) ? "Edit" : "Add" ?> Staff</h3>
+					<h3><?= ($is_edit) ? "Edit" : "Add" ?> Publisher</h3>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -35,20 +35,20 @@
 									</div>
 								</div>
 								<div class=" field item form-group">
-									<label class="col-form-label col-md-3 col-sm-3  label-align">Email</label>
+									<label class="col-form-label col-md-3 col-sm-3  label-align">Address</label>
 									<div class="input-group col-md-6 col-sm-6">
-										<input type="email" name="email" class="form-control <?=(!empty(session()->getFlashdata('validation')['email'])) ? 'is-invalid' : ''?>" placeholder="" value="<?= ($is_edit) ? $item['email'] : old('email') ?>">
+										<input type="text" name="address" class="form-control <?=(!empty(session()->getFlashdata('validation')['address'])) ? 'is-invalid' : ''?>" placeholder="" value="<?= ($is_edit) ? $item['address'] : old('address') ?>">
 										<div class="invalid-feedback">
-											<?=(!empty(session()->getFlashdata('validation')['email'])) ? session()->getFlashdata('validation')['email'] : ''?>
+											<?=(!empty(session()->getFlashdata('validation')['email'])) ? session()->getFlashdata('validation')['address'] : ''?>
 										</div>
 									</div>
 								</div>
 								<div class=" field item form-group">
-									<label class="col-form-label col-md-3 col-sm-3  label-align">Password</label>
+									<label class="col-form-label col-md-3 col-sm-3  label-align">Contact</label>
 									<div class="input-group col-md-6 col-sm-6">
-										<input type="text" name="password" class="form-control <?=(!empty(session()->getFlashdata('validation')['password'])) ? 'is-invalid' : ''?>" placeholder="" value="<?= ($is_edit) ? '' : old('password') ?>">
+										<input type="text" name="contact" class="form-control <?=(!empty(session()->getFlashdata('validation')['contact'])) ? 'is-invalid' : ''?>" placeholder="" value="<?= ($is_edit) ? '' : old('contact') ?>">
 										<div class="invalid-feedback">
-											<?=(!empty(session()->getFlashdata('validation')['password'])) ? session()->getFlashdata('validation')['password'] : ''?>
+											<?=(!empty(session()->getFlashdata('validation')['contact'])) ? session()->getFlashdata('validation')['contact'] : ''?>
 										</div>
 									</div>
 								</div>
