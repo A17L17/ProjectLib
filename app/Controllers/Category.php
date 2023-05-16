@@ -101,7 +101,7 @@ class Category extends BaseController
             ])){
                 $validation = \config\Services::validation();
                 session()->setFlashdata('validation',$validation->getErrors());
-                return redirect()->to('category-add')->withInput();
+                return redirect()->to('category-edit'/$post['id'])->withInput();
             }
             $this->categorymodel->save([
                 'id'    => $post['id'],
@@ -118,7 +118,7 @@ class Category extends BaseController
             ])){
                 $validation = \config\Services::validation();
                 session()->setFlashdata('validation',$validation->getErrors());
-                return redirect()->to('category-add')->withInput();
+                return redirect()->to('category-edit'/$post['id'])->withInput();
             }
             $this->categorymodel->save([
                 'id'    => $post['id'],
