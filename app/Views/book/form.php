@@ -55,7 +55,7 @@ $target_url = ($is_edit) ? "/book-editpro" : "/book-addpro";
                             <div class=" field item form-group">
                                 <label class="col-form-label col-md-3 col-sm-3  label-align">Penerbit</label>
                                 <div class="input-group col-md-6 col-sm-6">
-                                    <select class="form-control <?= (!empty(session()->getFlashdata('validation')['is_publisher'])) ? 'is-invalid' : '' ?>" name="id_publisher">
+                                    <select class="form-control <?= (!empty(session()->getFlashdata('validation')['id_publisher'])) ? 'is-invalid' : '' ?>" name="id_publisher">
                                         <option value=""></option>
                                         <?php foreach ($publisher as $poin) : ?>
                                             <option <?= ($poin['id'] == old('id_publisher')) ? 'selected' : (($is_edit) ? (($poin['id'] == $item['id_publisher']) ? 'selected' : '') : '') ?> value="<?= $poin['id'] ?>"><?= $poin['name'] ?></option>
@@ -66,7 +66,7 @@ $target_url = ($is_edit) ? "/book-editpro" : "/book-addpro";
                             <div class=" field item form-group">
                                 <label class="col-form-label col-md-3 col-sm-3  label-align">Kategori</label>
                                 <div class="input-group col-md-6 col-sm-6">
-                                    <select class="form-control <?= (!empty(session()->getFlashdata('validation')['is_publisher'])) ? 'is-invalid' : '' ?>" name="id_category">
+                                    <select class="form-control <?= (!empty(session()->getFlashdata('validation')['id_publisher'])) ? 'is-invalid' : '' ?>" name="id_category">
                                         <option value=""></option>
                                         <?php foreach ($category as $poin) : ?>
                                             <option <?= ($poin['id'] == old('id_category')) ? 'selected' :  (($is_edit) ? (($poin['id'] == $item['id_publisher']) ? 'selected' : '') : '') ?> value="<?= $poin['id'] ?>"><?= $poin['category'] ?></option>

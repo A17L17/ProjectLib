@@ -80,6 +80,16 @@ $routes->get('/book-edit', 'Book::edit');
 $routes->post('/book-editpro', 'Book::editpro');
 $routes->get('/book-del/(:num)', 'Book::del/$1');
 
+
+$routes->get('/borrow', 'Borrow::index');
+$routes->get('/borrow-add', 'Borrow::add');
+$routes->post('/borrow-addpro', 'Borrow::addpro');
+$routes->get('/borrow-edit/(:num)', 'Borrow::edit/$1');
+$routes->get('/borrow-edit', 'Borrow::edit');
+$routes->post('/borrow-editpro', 'Borrow::editpro');
+$routes->get('/borrow-del/(:num)', 'Borrow::del/$1');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
