@@ -211,6 +211,21 @@ class Borrow extends BaseController
             return redirect()->to('borrow')->with('info', 'data berhasil ditambah');
         }
     }
+    
+    public function retbook($id)
+    {
+        if (!session('id')) {
+            return redirect()->to(base_url())->with('error', 'Anda Harus Login');
+        }
+
+        $this->borrowmodel->save([
+            'id'    =>$id,
+            'note'  =>'Selesai Pinjam'
+        ]);
+
+        return redirect()->to('borrow');
+
+    }
 
     public function del($id)
     {

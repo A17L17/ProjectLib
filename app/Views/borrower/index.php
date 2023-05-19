@@ -45,7 +45,7 @@
 
                             <center>
                                 <a href="<?=base_url('borrower-edit/').$item['id']?>" class="btn btn-round btn-info btn-sm"><i class="fa fa-pencil"></i></a>
-                                <a href="<?=base_url('borrower-del/').$item['id']?>" class="btn btn-round btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                <a onclick="return confirm('Yakin Ingin Menghapus ? ')" href="<?=base_url('borrower-del/').$item['id']?>" class="btn btn-round btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                             </center>
 
                           </td>

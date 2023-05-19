@@ -39,6 +39,12 @@
     <link href="<?=base_url('public/gt')?>/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url('public/gt')?>/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
+    <!-- bootstrap-progressbar -->
+    <link href="<?base_url('public/gt') ?>/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="<?base_url('public/gt') ?>/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+
 </head>
 
 <body class="nav-md">
@@ -191,6 +197,27 @@
     <script src="<?=base_url('public/gt')?>/vendors/jszip/dist/jszip.min.js"></script>
     <script src="<?=base_url('public/gt')?>/vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="<?=base_url('public/gt')?>/vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+    <!-- Chart.js -->
+  <script src="<?= base_url('public/gt') ?>/vendors/Chart.js/dist/Chart.min.js"></script>
+  <!-- gauge.js -->
+  <script src="<?= base_url('public/gt') ?>/vendors/gauge.js/dist/gauge.min.js"></script>
+  <!-- Skycons -->
+  <script src="<?= base_url('public/gt') ?>/vendors/skycons/skycons.js"></script>
+  <!-- Flot -->
+  <script src="<?= base_url('public/gt') ?>/vendors/Flot/jquery.flot.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/Flot/jquery.flot.pie.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/Flot/jquery.flot.time.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/Flot/jquery.flot.stack.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/Flot/jquery.flot.resize.js"></script>
+  <!-- Flot plugins -->
+  <script src="<?= base_url('public/gt') ?>/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+  <script src="<?= base_url('public/gt') ?>/vendors/flot.curvedlines/curvedLines.js"></script>
+  <!-- DateJS -->
+  <script src="<?= base_url('public/gt') ?>/vendors/DateJS/build/date.js"></script>
+
 
 </body>
 

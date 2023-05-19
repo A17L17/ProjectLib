@@ -53,6 +53,7 @@
 									</div>
 								</div>
 								<button class="btn btn-success" style="float: right;"><?= ($is_edit) ? 'Edit' : 'Save' ?></button>
+								<a class="btn btn-danger" style="float: left;" href="<?= base_url('/staff') ?>"> Back </a>
 							</form>
 
 
